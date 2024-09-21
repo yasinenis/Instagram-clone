@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram</title>
+    <link rel="icon" href="Logo-Instagram.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+
+      .navim{
+        height: 54px;
+        background-color: white;
+      }
+
+      .custom-search {
+        background-image: url('assets/search-icon.svg');
+        background-repeat: no-repeat;
+        background-position: 70px center; /* Arka plan resmi konumlandırma */
+        padding-left: 80px; /* Placeholder ve metni ikonun üstüne gelmemesi için boşluk bırak */
+        background-size: 12px; /* İkonun boyutunu ayarlama */
+
+        padding: 4px 8px; /* Dikey ve yatay padding'i azaltır */
+        height: 30px; /* Kutunun yüksekliğini belirler */
+        font-size: 14px; /* Yazı tipini küçültür */
+        border-radius: 4px; /* Köşeleri daha yuvarlak yapar */
+        border: 1px solid #ccc; /* Varsayılan gri çerçeve */
+      }
+
+      .custom-search:focus::placeholder {
+        opacity: 0; /* Placeholder odaklanınca kaybolur */
+      }
+
+      .custom-search:focus {
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.406); /* Odaklanınca siyah çerçeve */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Hafif bir siyah gölge */
+        background-image: none;
+      }
+
+      .search-button {
+        width: 200px; /* Butonun genişliği */
+      }
+
+      .custom-search::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      .custom-search::placeholder {
+        text-align: center; /* Placeholder yazısını yatay olarak ortalar */
+      }
+
+      .story-card-body{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
+
+
+
+
+
+      
+    </style>
+
+  </head>
+  <body>
+    <!-- B O D Y -->
+    <nav class="fixed-top pt-0 mt-0 navbar bg-body-tertiary navim mt-0">
+      <div class="container mt-0 ">
+        <a class="navbar-brand ml-5 d-flex align-items-center mt-0 navim" href="#">
+          <img class="mt-0 p-0" src="assets/Logo-Instagram.png" alt="Bootstrap" width="120" height="70">
+        </a>
+        <!-- search button -->
+        <form class="d-none d-md-block d-flex ms-5" role="search">
+          <input class=" search-button custom-search form-control me-2 " type="search" placeholder="Ara" aria-label="Search">
+        </button>
+          
+        </form>
+
+        <div class="d-none d-md-block">
+              <!-- ev-->
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-home fa-md mr-2" style="line-height: 1; color: rgb(30, 48, 80);"></i>
+          </a>
+
+          <!-- messenger -->
+          <a class="navbar-brand" href="#">
+            <i
+                class="fab fa-facebook-messenger fa-md mr-2 mt-1"
+                style="color: black"
+              ></i
+            >
+          </a>
+
+          <!-- pusula -->
+          <a class="navbar-brand" href="#">
+            <i class="far fa-compass fa-md mr-2 mt-1" style="line-height: 1; color: black"></i>
+          </a>
+
+
+          <!-- galp :) -->
+          <a class="navbar-brand" href="#">
+            <i class="far fa-heart fa-md mr-2 mt-1" style="color: black"></i>
+          </a>
+          
+          <!-- profil -->
+          <a class="navbar-brand" href="https://github.com/yasinenis">
+            <img
+                src="https://avatars.githubusercontent.com/u/107325841?v=4"
+                class="mb-2"
+                style="width: 23px; height: 23px; border-radius: 50%;"
+            />
+          </a>
+        </div>
+        
+
+      </div>
+    </nav>
+
+    <!-- container  -->
+
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="row mt-2 ">
+            <div class="col-sm-10 offset-sm-1 mt-2 mb-2">
+
+              <!-- stories -->
+              <div class="card">
+
+                <div class="mx-3">
+                  <div class="story-card-body card-body mx-2 story">
+                   
+  
+                    <!-- s2-->
+                    <div style="max-height: 150px;">
+                      <a href="https://github.com/yasinenis" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="https://avatars.githubusercontent.com/u/107325841?v=4"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        /> <br>
+                        <span style="color: black;" class="storytext">yasinenis201</span>
+                        </a>
+                    </div>
+
+
+                    <!-- s1-->
+                    <div class="d-none d-md-block" style="max-height: 150px;">
+                      <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/kodlama.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        /> <br>
+                        <span style="color: black;" class="storytext">kodluyoruz</span>
+                        </a>
+                    </div>
+  
+  
+                    <!-- s3-->
+                    <div style="max-height: 150px;">
+                      <a href="https://www.instagram.com/astroalper/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/astroalper.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        /> <br>
+                        <span style="color: black;" class="storytext">astroalper</span>
+                        </a>
+                    </div>
+  
+  
+                    <!-- s4-->
+                    <div style="max-height: 150px;">
+                      <a href="https://www.instagram.com/ccihancelik_/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/cihancelik.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        /> <br>
+                        <span style="color: black;" class="storytext">ccihancelik_</span>
+                        </a>
+                    </div>
+  
+  
+                    <!-- s5-->
+                    <div class="d-none d-md-block" style="max-height: 150px;">
+                      <a href="https://www.instagram.com/mustikustii/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/mustikustii.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        /> <br>
+                        <span style="color: black;" class="storytext">mustikustii</span>
+                        </a>
+                    </div>
+  
+  
+                    <!-- s6-->
+                    <div style="max-height: 150px;">
+                      <a href="https://www.instagram.com/samiyusuf/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/samiyusuf.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        /> <br>
+                        <span style="color: black;" class="storytext">samiyusuf</span>
+                        </a>
+                    </div>
+  
+  
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- post - 1  -->
+              <div class="card mt-2">
+                <div class="card-body ps-0 pe-0 pt-0 pb-0">
+                  <div>
+                    <div class="pt-2 pb-1 d-flex"> <!-- üst bilgi-->
+                      <a href="https://www.instagram.com/astroalper/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/astroalper.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        />
+                        <span style="font-weight: bold; color: black;" class="storytext">astroalper</span>
+                        <span style="font-weight: lighter; color: black;" class="storytext"> 3dk</span>
+                        </a>
+                        <!-- three points -->
+                      <a class="navbar-brand ms-auto" href="#">
+                        <i class="fa-solid fa-ellipsis fa-md mr-2 mt-1" style="color: black"></i>
+                      </a>
+                        
+                    </div>
+                    <div> <!-- resimli içerik-->
+                    <img class="img-fluid" src="assets/content/astroalper.jpg" alt="">
+                    
+                    <div class="pt-1 pb-1"> <!-- alt bilgi-->
+
+                      <div class="d-flex"> <!-- buttons bottom -->
+                        <!-- like -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-heart fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- comment -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-light fa-comment fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- share -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-regular fa-paper-plane fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- save -->
+                        <a class="navbar-brand ms-auto" href="#">
+                          <i class="far fa-regular fa-bookmark fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                      </div>
+                      <div class="ms-2 mb-2 me-2"> <!-- text - bottom -->
+                        <span style="font-weight: bold;">astroalper</span>
+                        <span>
+                          Uzayın sonsuz boşluğunda bir adım daha... 🇹🇷🚀 İlk Türk astronot olarak Uluslararası Uzay İstasyonu'na ayak bastık. Bu tarihi anın bir parçası olmak tarifsiz bir onur! 🌌
+                        </span>
+                        <span style="font-weight: bold;">
+                          #AlperGezeravcı #UzaydaBirTürk #İlkAdım #ISS #GörevBaşladı
+                        </span>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- post - 2  -->
+              <div class="card mt-5">
+                <div class="card-body ps-0 pe-0 pt-0 pb-0">
+                  <div>
+                    <div class="pt-2 pb-1 d-flex"> <!-- üst bilgi-->
+                      <a href="https://www.instagram.com/ccihancelik_/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/cihancelik.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        />
+                        <span style="font-weight: bold; color: black;" class="storytext">cihancelik</span>
+                        <span style="font-weight: lighter; color: black;" class="storytext"> 1h</span>
+                        </a>
+                        <!-- three points -->
+                      <a class="navbar-brand ms-auto" href="#">
+                        <i class="fa-solid fa-ellipsis fa-md mr-2 mt-1" style="color: black"></i>
+                      </a>
+                        
+                    </div>
+                    <div> <!-- resimli içerik-->
+                    <img class="img-fluid" src="assets/content/cihancelik_content.jpg" alt="">
+                    
+                    <div class="pt-1 pb-1"> <!-- alt bilgi-->
+
+                      <div class="d-flex"> <!-- buttons bottom -->
+                        <!-- like -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-heart fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- comment -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-light fa-comment fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- share -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-regular fa-paper-plane fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- save -->
+                        <a class="navbar-brand ms-auto" href="#">
+                          <i class="far fa-regular fa-bookmark fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                      </div>
+                      <div class="ms-2 mb-2 me-2"> <!-- text - bottom -->
+                        <span style="font-weight: bold;">cihancelik</span>
+                        <span>
+                          Hayatın stresine karşı en doğal terapi: İneğe sarılmak! 🐄🤗 Doğayla iç içe olmak, her şeyden daha huzurlu. Hem dostluk, hem enerji! 💚
+                        </span>
+                        <span style="font-weight: bold;">
+                          #CihanÇelik #DoğaSevgisi #İneğeSarılmak #Mutluluk #DoğanınKucaklaması
+                        </span>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- post - 3  -->
+              <div class="card mt-5 mb-5">
+                <div class="card-body ps-0 pe-0 pt-0 pb-0">
+                  <div>
+                    <div class="pt-2 pb-1 d-flex"> <!-- üst bilgi-->
+                      <a href="https://www.instagram.com/samiyusuf/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/samiyusuf.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        />
+                        <span style="font-weight: bold; color: black;" class="storytext">samiyusuf</span>
+                        <span style="font-weight: lighter; color: black;" class="storytext"> 8h</span>
+                        </a>
+                        <!-- three points -->
+                      <a class="navbar-brand ms-auto" href="#">
+                        <i class="fa-solid fa-ellipsis fa-md mr-2 mt-1" style="color: black"></i>
+                      </a>
+                        
+                    </div>
+                    <div> <!-- resimli içerik-->
+                    <img class="img-fluid" src="assets/content/samiyusuf.jpeg" alt="">
+                    
+                    <div class="pt-1 pb-1"> <!-- alt bilgi-->
+
+                      <div class="d-flex"> <!-- buttons bottom -->
+                        <!-- like -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-heart fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- comment -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-light fa-comment fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- share -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-regular fa-paper-plane fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- save -->
+                        <a class="navbar-brand ms-auto" href="#">
+                          <i class="far fa-regular fa-bookmark fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                      </div>
+                      <div class="ms-2 mb-2"> <!-- text - bottom -->
+                        <span style="font-weight: bold;">samiyusuf</span>
+                        <span>
+                          Music, the universal language that pierces the veil of separation between us all. 🎶💫 Once again, Sami Yusuf reminds us of the power of melodies to bring hearts together. 🌍
+                        </span>
+                        <span style="font-weight: bold;">
+                          #SamiYusuf #PowerOfMusic #UniversalLanguage #ConnectingSouls
+                        </span>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <!-- post - 4  -->
+              <div class="card mt-5 mb-5">
+                <div class="card-body ps-0 pe-0 pt-0 pb-0">
+                  <div>
+                    <div class="pt-2 pb-1 d-flex"> <!-- üst bilgi-->
+                      <a href="https://www.instagram.com/mustikustii/" style="text-decoration: none;" target="_blank">
+                        <img
+                          src="assets/mustikustii.jpg"
+                          class="storyphoto img-fluid mr-3 mx-2"
+                          style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                        />
+                        <span style="font-weight: bold; color: black;" class="storytext">mustikustii</span>
+                        <span style="font-weight: lighter; color: black;" class="storytext"> 13h</span>
+                        </a>
+                        <!-- three points -->
+                      <a class="navbar-brand ms-auto" href="#">
+                        <i class="fa-solid fa-ellipsis fa-md mr-2 mt-1" style="color: black"></i>
+                      </a>
+                        
+                    </div>
+                    <div> <!-- resimli içerik-->
+                    <img class="img-fluid" src="assets/content/mustikusti.jpg" alt="">
+                    
+                    <div class="pt-1 pb-1"> <!-- alt bilgi-->
+
+                      <div class="d-flex"> <!-- buttons bottom -->
+                        <!-- like -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-heart fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- comment -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-light fa-comment fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- share -->
+                        <a class="navbar-brand ms-2" href="#">
+                          <i class="far fa-regular fa-paper-plane fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                        <!-- save -->
+                        <a class="navbar-brand ms-auto" href="#">
+                          <i class="far fa-regular fa-bookmark fa-md mr-2 mt-1" style="color: black"></i>
+                        </a>
+                      </div>
+                      <div class="ms-2 mb-2"> <!-- text - bottom -->
+                        <span style="font-weight: bold;">mustikustii</span>
+                        <span>
+                          Türkiye'de misafir bulduğunu değil umduğunu yermiş. Salih amca sağ olsun.
+                        </span>
+                        <span style="font-weight: bold;">
+                          #Afrikadanselam
+                        </span>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- RİGHT PANEL -->
+
+        <div class="d-none d-md-block col-sm-3">
+          <div class="row bg-body-tertiary mt-3 ms-0" style="width: 340px; position:fixed;">
+            <div class="card border-0 mt-4">
+              <div class="card-body">
+                
+                <!-- self profile-->
+                <a class="navbar-brand" href="https://github.com/yasinenis">
+                  <img
+                      src="https://avatars.githubusercontent.com/u/107325841?v=4"
+                      class="mb-0"
+                      style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                  />
+                  <span
+                      class=""
+                      style="
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                          'Helvetica Neue', sans-serif;
+                        font-size: 15px;
+                        color: black;
+                        margin-left: 10px;
+                      "
+                      ><strong>yasinenis</strong>
+                      </span>
+                </a>
+                <!-- öneriler -->
+                <div class="d-flex mt-3">
+                  <span style="font-weight: lighter; font-size: 15px;">Senin İçin Öneriler</span>
+                  <span class="ms-auto" style="font-weight: bold; font-size: 15px;">Tümünü gör</span>
+                </div>
+                <!-- ö1 -->
+                <div class="mt-2">
+                  <a class="d-flex navbar-brand" href="https://www.instagram.com/yoshi.enomoto/">
+                    <img
+                        src="assets/yoshi.jpg"
+                        class="mb-0"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                    />
+                    <span
+                        class=""
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                            'Helvetica Neue', sans-serif;
+                          font-size: 15px;
+                          color: black;
+                          margin-left: 10px;
+                        "
+                        ><strong>yoshi.enomoto</strong>
+                        </span>
+                    <span 
+                        class="ms-auto"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: rgb(17, 108, 255);
+                      margin-left: 10px;"
+                        
+                        >Takip Et</span>
+                  </a>
+                </div>
+
+                <!-- ö2 -->
+                <div class="mt-2">
+                  <a class="d-flex navbar-brand" href="https://www.instagram.com/dr.altaycemmeric23.10/">
+                    <img
+                        src="assets/altaycemmeric.jpg"
+                        class="mb-0"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                    />
+                    <span
+                        class=""
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                            'Helvetica Neue', sans-serif;
+                          font-size: 15px;
+                          color: black;
+                          margin-left: 10px;
+                        "
+                        ><strong>dr.altaycemmeric23.10</strong>
+                        </span>
+                    <span 
+                        class="ms-auto"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: rgb(17, 108, 255);
+                      margin-left: 10px;"
+                        
+                        >Takip Et</span>
+                  </a>
+                </div>
+
+
+                <!-- ö3 -->
+                <div class="mt-2">
+                  <a class="d-flex navbar-brand" href="https://www.instagram.com/teknofest/">
+                    <img
+                        src="assets/teknofest.jpg"
+                        class="mb-0"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                    />
+                    <span
+                        class=""
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                            'Helvetica Neue', sans-serif;
+                          font-size: 15px;
+                          color: black;
+                          margin-left: 10px;
+                        "
+                        ><strong>teknofest</strong>
+                        </span>
+                    <span 
+                        class="ms-auto"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: rgb(17, 108, 255);
+                      margin-left: 10px;"
+                        
+                        >Takip Et</span>
+                  </a>
+                </div>
+
+
+                <!-- ö4 -->
+                <div class="mt-2">
+                  <a class="d-flex navbar-brand" href="https://www.instagram.com/osmanbulutk/">
+                    <img
+                        src="assets/osmanbulutk.jpg"
+                        class="mb-0"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                    />
+                    <span
+                        class=""
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                            'Helvetica Neue', sans-serif;
+                          font-size: 15px;
+                          color: black;
+                          margin-left: 10px;
+                        "
+                        ><strong>osmanbulutk</strong>
+                        </span>
+                    <span 
+                        class="ms-auto"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: rgb(17, 108, 255);
+                      margin-left: 10px;"
+                        
+                        >Takip Et</span>
+                  </a>
+                </div>
+
+                <!-- ö5 -->
+                <div class="mt-2">
+                  <a class="d-flex navbar-brand" href="https://www.instagram.com/mertturak/">
+                    <img
+                        src="assets/mertturak.jpg"
+                        class="mb-0"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid rgb(238, 39, 82);"
+                    />
+                    <span
+                        class=""
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                            'Helvetica Neue', sans-serif;
+                          font-size: 15px;
+                          color: black;
+                          margin-left: 10px;
+                        "
+                        ><strong>mertturak</strong>
+                        </span>
+                    <span 
+                        class="ms-auto"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: rgb(17, 108, 255);
+                      margin-left: 10px;"
+                        
+                        >Takip Et</span>
+                  </a>
+                </div>
+
+                
+  
+                
+                
+              </div>
+            </div>
+            
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+    <!-- B O D Y - ended -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- SCRİPT -->
+    <script>
+      const searchInput = document.querySelector('.custom-search');
+  
+      searchInput.addEventListener('focus', function() {
+        this.style.backgroundImage = "none"; // Odaklandığında ikonu kaldır
+      });
+  
+      searchInput.addEventListener('blur', function() {
+        // Eğer input boşsa ikon geri gelsin, değilse gelmesin
+        if (this.value === '') {
+          this.style.backgroundImage = "url('assets/search-icon.svg')";
+        }
+      });
+    </script>
+
+
+  </body>
+</html>
